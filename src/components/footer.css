@@ -1,0 +1,8 @@
+.imgfoot{
+  width: 30px;
+  height: 30px;
+}
+
+.footInvert{
+  filter: invert(100%);
+}

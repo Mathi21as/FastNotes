@@ -1,0 +1,19 @@
+.btnopennote{
+
+  border-radius: 15px;
+  height: 50px;
+  width: 60px;
+}
+
+.btnopennoteerase{
+  border-radius: 15px;
+  height: 50px;
+  width: 60px;
+}
+
+.opennoteedit textarea{
+  width: 100%;
+  height: 44rem;
+  outline: none;
+  resize: none;
+}
