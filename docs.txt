@@ -1,0 +1,5 @@
+ + Implementar react router para una mejor navegacion en la app
+
+ + buscar como hacer un boton login de google desde cero
+
+ + terminar de gestionar el manejo del guardado en drive

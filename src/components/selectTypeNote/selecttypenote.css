@@ -1,0 +1,43 @@
+.selectTypeNote-container{
+  background-color: rgba(0,0,0,0.5);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  padding: 80px, 20px, 20px, 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  animation: show 0.5s;
+}
+
+.selectTypeNote-container div:nth-child(1){
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 35vh;
+  width: 400px;
+  height: max-content;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.selectTypeNote-container > div > div{
+    height: 80px;
+}
+
+.selectTypeNote-container > div > p{
+    text-align: center;
+    width: 100%;
+    font-size: 1.8em;
+    margin: 10px;
+}
+
+.selectTypeNote-container > div > div > button{
+    margin: 10px;
+    width: 90px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 24px;
+}

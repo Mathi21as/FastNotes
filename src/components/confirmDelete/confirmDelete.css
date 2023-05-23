@@ -1,0 +1,29 @@
+.confirmDel{
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  animation: show 0.3s;
+}
+
+.confirmDel div{
+  position: absolute;
+  top: 35vh;
+  width: 350px;
+  height: max-content;
+  border-radius: 15px;
+}
+
+.confirmDel button{
+  border-radius: 100px;
+  width: 65px;
+  height: 65px;
+  margin: 1rem;
+  margin-bottom: 0;
+  border-width: 1px;
+}

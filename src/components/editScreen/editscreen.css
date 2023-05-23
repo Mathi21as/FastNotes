@@ -1,0 +1,93 @@
+.buttons-div .btnprinc{
+  border-radius: 15px;
+  height: 50px;
+}
+
+.btnprinc{
+  width: 100px;
+}
+
+.btn2{
+  width: 60px;
+}
+
+.btnEraseItem{
+  height: 35px;
+  width: 35px;
+}
+
+.container-inputs{
+  height: 80%;
+}
+
+.addListItem-btn{
+  width: 50px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+}
+
+.addListItem-btn img{
+  width: 20px;
+}
+
+.container-inputs textarea{
+  height: 48rem;
+  outline: none;
+  resize: none;
+}
+
+.container-inputs input{
+  outline: none;
+}
+
+.buttons-div .btn1{
+  font-family: arial;
+  width: 60px;
+}
+
+.circle-color{
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+}
+
+.orangees{
+  background-color: rgb(207, 117, 57);
+}
+
+.redes{
+  background-color: rgb(209, 58, 58);
+}
+
+.bluees{
+  background-color: rgb(71, 113, 182);
+}
+
+.greenes{
+  background-color: rgb(116, 185, 72);
+}
+
+.pinkes{
+  background-color: rgb(204, 79, 145);
+}
+
+.purplees{
+  background-color: rgb(160, 73, 187);
+}
+
+.animColors{
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  animation: deploy .8s ease-in;
+}
+
+@keyframes deploy {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 275px;
+  }
+}

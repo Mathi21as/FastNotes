@@ -1,0 +1,57 @@
+.btnopennote{
+  border-radius: 15px;
+  height: 50px;
+  width: 60px;
+}
+
+.btnopennoteerase{
+  border-radius: 15px;
+  height: 50px;
+  width: 60px;
+}
+
+.hElements > {
+  height: 50px;
+}
+
+.invert{
+  filter: invert(1);
+}
+
+.opennoteedit textarea{
+  width: 100%;
+  height: 46.5rem;
+  outline: none;
+  resize: none;
+}
+
+.itemText{
+  width: calc(100% - 32px);
+}
+
+.btnImgCheck{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.1);
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+}
+
+.btnImgCheck img{
+  width: 100%;
+  height: 100%;
+}
+
+.anim{
+  animation: show 1s;
+}
+
+@keyframes show {
+  0% {
+      opacity: 0;
+  }
+  100%{
+      opacity: 100;
+  }
+}

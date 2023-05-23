@@ -1,0 +1,29 @@
+.divAboutus{
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    animation: show 0.3s;
+  }
+  
+  .divAboutus div{
+    position: absolute;
+    top: 20vh;
+    width: 70%;
+    height: max-content;
+    border-radius: 15px;
+  }
+
+  @keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+  }

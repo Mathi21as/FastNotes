@@ -1,0 +1,42 @@
+.dateDiv{
+  align-items: center;
+}
+
+.dateDiv img{
+  width: 30px;
+  height: 30px;
+  margin: 0px, 10px, 0px, 0px;
+  filter: contrast(60%) invert(1);
+}
+
+.text-secondaryy{
+  color: rgb(209, 209, 209);
+}
+
+.textwrap{
+  overflow-wrap: break-word;
+}
+
+.orange{
+  background-color: rgb(207, 117, 57);
+}
+
+.red{
+  background-color: rgb(209, 58, 58);
+}
+
+.blue{
+  background-color: rgb(71, 113, 182);
+}
+
+.green{
+  background-color: rgb(116, 185, 72);
+}
+
+.pink{
+  background-color: rgb(204, 79, 145);
+}
+
+.purple{
+  background-color: rgb(160, 73, 187);
+}
