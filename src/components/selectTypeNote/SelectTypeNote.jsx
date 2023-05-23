@@ -20,7 +20,7 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							text:"",
-							date: moment().format("LLLL").substr(8,12),
+							date: moment().format("LLLL").slice(9,21),
 							color:"",
 							type:"text"
 						})
@@ -30,7 +30,7 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							text:"",
-							date: moment().format("LLLL").substr(8,12),
+							date: moment().format("LLLL").slice(9,21),
 							color:"",
 							type:"text"
 						})
@@ -46,7 +46,7 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							list:[],
-							date: moment().format("LLLL").substr(8,12),
+							date: moment().format("LLLL").slice(9,21),
 							color:"",
 							type:"list"
 						})
@@ -56,7 +56,7 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							list:[],
-							date: moment().format("LLLL").substr(8,12),
+							date: moment().format("LLLL").slice(9,21),
 							color:"",
 							type:"list"
 						})

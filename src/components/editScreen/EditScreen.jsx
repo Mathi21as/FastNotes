@@ -48,16 +48,23 @@ const EditScreen = ({
         actual.arrayNotes[index] = {
           id: actual.arrayNotes[index].id,
           name: name==="" ? "Title Empty" : name,
-          [actual.arrayNotes[index].type]: actual.arrayNotes[index].type === "list" ?
+          [actual.arrayNotes[index].type !== undefined ?
+						actual.arrayNotes[index].type
+						:
+						"text"
+						]: actual.arrayNotes[index].type === "list" ?
 						list
 						:
 						text === "" ?
 						"Text Empty"
 						:
 						text,
-          date: `Last modification: ${moment().format("LLLL").substr(8,12)}`,
+          date: `Last modification: ${moment().format("LLLL").slice(9,21)}`,
           color: colorNote!==" " ? colorNote : "orange",
-          type: actual.arrayNotes[index].type
+          type: actual.arrayNotes[index].type !== undefined ?
+						actual.arrayNotes[index].type
+						:
+						"text"
         };
         /*
 					cambia la bandera creada en app.js para que se ejecute el useEffect y
@@ -152,7 +159,7 @@ const EditScreen = ({
 
   const render = () => {
 		if( hideNotes.flag && openNote && hideNotes.id===index ){
-	    if(count.type === "text"){
+	    if(count.type === "text" || count.type === undefined){
 	      return(
 	        <>
 	          <div className="row mx-0 mb-5 buttons-div justify-content-between">

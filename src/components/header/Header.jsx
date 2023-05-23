@@ -23,7 +23,6 @@ const Header = ({setCountNote, countNotes, setShowAboutUs, t}) => {
 	const handleChangeLanguage = () => {
 		setCountNote(
 			(actual) => {
-				console.log(i18next.language);
 				if(i18next.language === "es-ES"){
 					actual = {theme_app: actual.theme_app, lang_app: "en-IN", arrayNotes: actual.arrayNotes};
 					return actual;
