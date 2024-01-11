@@ -57,22 +57,8 @@ const LayoutNote = ( {
           <p className="text-white h2 mt-3 textwrap">{t(count.name)}</p>
           <div className='d-flex flexDirection-row dateDiv'>
             <p className="text-secondaryy my-1 me-2 overflow-hidden">
-							{
-								count.date.length === 12 ?
-									(t(count.date.substr([0], [3])) + count.date.substr([3]))
-									: count.date.length === 33 ?
-									(
-										t(count.date.slice(0,21)) +
-										t(count.date.slice(21, 24)) + " " +
-										t(count.date.substr(25))
-									)
-									: count.date.length === 31 &&
-									(
-										t(count.date.slice(0,19)) +
-										t(count.date.slice(19, 22)) + " " +
-										t(count.date.substr(23))
-									)
-							}
+              {count.modified == "true" && t("Last modification: ")}
+							{count.date}
 						</p>
             {count.type === "list" ? 
                         <img

@@ -20,8 +20,9 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							text:"",
-							date: moment().format("LLLL").slice(9,21),
+							date: moment().format("LL"),
 							color:"",
+							modified: "false",
 							type:"text"
 						})
         if(actual.arrayNotes[0].name !== "")
@@ -30,8 +31,9 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							text:"",
-							date: moment().format("LLLL").slice(9,21),
+							date: moment().format("LL"),
 							color:"",
+							modified: "false",
 							type:"text"
 						})
         return actual
@@ -46,7 +48,7 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							list:[],
-							date: moment().format("LLLL").slice(9,21),
+							date: moment().format("LL"),
 							color:"",
 							type:"list"
 						})
@@ -56,7 +58,7 @@ const SelectTypeNote = ({setCountNote, theme, t}) => {
 							id:"",
 							name:"",
 							list:[],
-							date: moment().format("LLLL").slice(9,21),
+							date: moment().format("LL"),
 							color:"",
 							type:"list"
 						})

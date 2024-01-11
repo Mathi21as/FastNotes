@@ -9,7 +9,6 @@
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "fs-js": "^1.0.6",
-    "gapi-script": "^1.2.0",
     "i18next": "^22.5.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",

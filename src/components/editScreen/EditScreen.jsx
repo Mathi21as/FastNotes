@@ -11,16 +11,16 @@ import addItemImg from "../../resourses/icons/add-item-list.png"
 import deleteItemImg from "../../resourses/icons/delete.png"
 
 const EditScreen = ({
-											index,
-											executeLocalSetItem,
-											delNote,
-											uuidv4,
-											count,
-											setData,
-											theme,
-											openNote,
-											t
-											}) => {
+	index,
+	executeLocalSetItem,
+	delNote,
+	uuidv4,
+	count,
+	setData,
+	theme,
+	openNote,
+	t
+	}) => {
   const [text, setText] = useState(count.text);
   const [name, setName] = useState(count.name);
   const { hideNotes, dispatch } = useContext(hideNotesFlagContext);
@@ -41,6 +41,7 @@ const EditScreen = ({
 						text,
           date: count.date,
           color: colorNote !== "" ? colorNote : "orange",
+		  modified: count.modified,
           type: actual.arrayNotes[0].type
         }
       }
@@ -59,8 +60,9 @@ const EditScreen = ({
 						"Text Empty"
 						:
 						text,
-          date: `Last modification: ${moment().format("LLLL").slice(9,21)}`,
+          date: moment().format("LL"),
           color: colorNote!==" " ? colorNote : "orange",
+		  modified: "true",
           type: actual.arrayNotes[index].type !== undefined ?
 						actual.arrayNotes[index].type
 						:

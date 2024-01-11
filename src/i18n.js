@@ -44,7 +44,7 @@ const resources = {
 			"Delete": "Eliminar",
 			"Developed by": "Desarrollado por",
 		}
-  }
+  },
 };
 
 i18n

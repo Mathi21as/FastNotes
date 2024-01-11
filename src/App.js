@@ -22,14 +22,14 @@ function App() {
   const executeLocalSetItem = useFlag( false )
 	const notesInLocalStorage = JSON.parse(localStorage.getItem("notes"))
 	const [countNotes, setCountNotes] = useState(notesInLocalStorage != null ? 
-																												notesInLocalStorage
-																												:
-																												{
-																													theme_app:"dark",
-																													lang_app: "en-IN",
-																													arrayNotes:[  ]
-																												}
-																												)
+		notesInLocalStorage
+		:
+		{
+			theme_app:"dark",
+			lang_app: "en-IN",
+			arrayNotes:[  ]
+		}
+		)
   const [hideNotes, dispatch] = useReducer(hideNotesFlagReducer, false);
   const [selectTypeNote, dispatchTypeNote] = useReducer(showSelectTypeNoteReducer, false);
   const [showAboutUs, setShowAboutUs] = useState(false)
@@ -55,14 +55,14 @@ function App() {
   return (
     <hideNotesFlagContext.Provider value={{hideNotes, dispatch}}>
       <div className={`
-											container mw-100 bg-${countNotes.theme_app} app
-											${!selectTypeNote.flag || !hideNotes.flag ? 
-																							"padding-main"
-																							:
-																							""
-																							}
-											position-relative`}
-											>
+		container mw-100 bg-${countNotes.theme_app} app
+		${!selectTypeNote.flag || !hideNotes.flag ? 
+														"padding-main"
+														:
+														""
+														}
+		position-relative`}
+		>
         <showSelectTypeNoteContext.Provider
 					value={{selectTypeNote, dispatchTypeNote}}
 					>

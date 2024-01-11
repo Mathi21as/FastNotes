@@ -117,22 +117,8 @@ const NoteTypeList = ( {theme,
 							{t(note.name)}
 				</p>
 				<p className="fs-5 text-secondary m-3 overflow-hidden">
-					{
-						note.date.length === 12 ?
-							(t(note.date.substr([0], [3])) + note.date.substr([3]))
-							: note.date.length === 33 ?
-							(
-								t(note.date.slice(0,21)) +
-								t(note.date.slice(21, 24)) + " " +
-								t(note.date.substr(25))
-							)
-							: note.date.length === 31 &&
-							(
-								t(note.date.slice(0,19)) +
-								t(note.date.slice(19, 22)) + " " +
-								t(note.date.substr(23))
-							)
-					}
+					{note.modified == "true" && t("Last modification: ")}
+					{note.date}
 				</p>
 				{
 					note.list.length > 0 ? 
