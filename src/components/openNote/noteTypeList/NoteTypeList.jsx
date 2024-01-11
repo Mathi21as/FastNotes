@@ -6,7 +6,6 @@ import editNoteImg from "../../../resourses/icons/edit.png"
 import backArrowImg from "../../../resourses/icons/back-arrow.png"
 import deleteImg from "../../../resourses/icons/delete.png"
 import checkImg from "../../../resourses/icons/check-item-list.png"
-import crossImg from "../../../resourses/icons/cross-item-list.png"
 
 
 const NoteTypeList = ( {theme,
@@ -25,23 +24,12 @@ const NoteTypeList = ( {theme,
 			setCountNotes((actual) => {
 				actual.arrayNotes[index].list[indexItem] = {
 					text: item.text,
-					status: "cross"
+					status: ""
 				};
 				setFlagReRender((actual) => !actual);
 	    	localStorage.setItem("notes", JSON.stringify(actual));
 				return actual;
 				})
-		}
-		else if(item.status === "cross"){
-			setCountNotes((actual) => {
-				actual.arrayNotes[index].list[indexItem] = {
-					text: item.text,
-					status: ""
-				};
-				setFlagReRender((actual) => !actual);
-				localStorage.setItem("notes", JSON.stringify(actual));
-				return actual;
-			})
 		}
 		else{
 			setCountNotes((actual) => {
@@ -117,7 +105,7 @@ const NoteTypeList = ( {theme,
 							{t(note.name)}
 				</p>
 				<p className="fs-5 text-secondary m-3 overflow-hidden">
-					{note.modified == "true" && t("Last modification: ")}
+					{note.modified === "true" && t("Last modification: ")}
 					{note.date}
 				</p>
 				{
@@ -139,17 +127,13 @@ const NoteTypeList = ( {theme,
 									<button 
 										className='btnImgCheck mx-2'
 										onClick={() => changeStatusItemList(item, indexItem)}>
-										<img
-											src={	item.status === "check" ?
-														checkImg
-														:
-														item.status === "cross" ?
-														crossImg
-														:
-														""
-														}
-											alt=""
-										/>
+										{
+											item.status === "check" && (
+												<img
+													src={checkImg}
+													alt=""
+												/>)
+										}
 									</button>
 								</div>
 							</>
