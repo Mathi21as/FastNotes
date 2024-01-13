@@ -1,4 +1,4 @@
-import React, { useState, useContext} from 'react'
+import React, { useContext} from 'react'
 import {hideNotesFlagContext} from '../../context/hideNotesFlagContext'
 import {showSelectTypeNoteContext} from '../../context/showSelectTypeNoteContext'
 import "./header.css"
@@ -10,7 +10,7 @@ import menuImg from "../../resourses/icons/menu.png"
 
 const Header = ({setCountNote, countNotes, setShowAboutUs, t}) => {
   const { hideNotes, dispatch } = useContext(hideNotesFlagContext);
-  const { selectTypeNote, dispatchTypeNote } = useContext(showSelectTypeNoteContext);
+  const { dispatchTypeNote } = useContext(showSelectTypeNoteContext);
 
   const handleChangeTheme = () => {
     setCountNote(
@@ -46,7 +46,7 @@ const Header = ({setCountNote, countNotes, setShowAboutUs, t}) => {
         <button 
 					className={`
 						${countNotes.theme_app==="white" ? "themewhite" : "themedark"}
-						menu_btn border border-0 mb-2 mt-1
+						 menu_btn mb-2 mt-1 border-0
 						`}
 					onClick={()=>menuLogic()}
 					>

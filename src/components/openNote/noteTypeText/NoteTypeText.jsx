@@ -68,7 +68,7 @@ const NoteTypeText = ( {theme, handleBack, setConfirmDel, handleEdit, note, t} )
 						{t(note.name)}
 				</p>
 				<p className="fs-5 text-secondary m-3 overflow-hidden">
-					{note.modified == "true" && t("Last modification: ")}
+					{note.modified === "true" && t("Last modification: ")}
 					{note.date}
 				</p>
 				<textarea
